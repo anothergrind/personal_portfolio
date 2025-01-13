@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title> Kamsi's Portfolio </title>
 </head>
 <body>
-    <h3> Hey there! </h3>
-    <h1> I'm Kamsi Ozorji </h1>
-    <h4> Software Engineer </h4>
+    <div class="first-section">
+        <h3 id="intro"> Hey there! </h3>
+        <h1 id="name"> I'm Kamsi Ozorji </h1>
+        <h4 id="title"> Software Engineer </h4>
+    </div>
 
-    <div>
+    <div class="about-me">
         <h2> About Me </h2>
+        <h5> Learn some more about me</h5>
         <p> Hey there! I'm Kamsi Ozorji, a passionate CS Student at the University of Texas at Dallas, with a minor in Cognitive Science </p>
         <p> Despite only being a sophomore, I have hands-on experience interning at Atlassian three times as well as Indeed once, and interned at UTD as a research intern once </p>
         <p> I currently have a 3.73 GPA and have taken relevant classes like: Object Oriented Programming and Computer Science II </p>
     </div>
 
-    <div>
+    <div class="connect">
         <button> Here's a link to my resume </button>
         <button> Connect with me </button>
     </div>
 
-    <div>
+    <div class="projects">
         <h2> Projects </h2>
         <button> AIMD Neurodetect 
             <ul>
@@ -42,7 +46,7 @@
         </button>
     </div>
 
-    <div>
+    <div class="experience">
         <h2> Experience </h2>
         <ul>
             <li> Incoming SWE Intern @ Atlassian </li>
@@ -54,50 +58,67 @@
         </ul>
     </div>
 
-    <div>
+    <div class="skills">
         <h2> Skills </h2>
-            <p> Programming Languages </p>
-            <ul>
-                <li> TypeScript </li>
-                <li> JavaScript </li>
-                <li> HTML </li>
-                <li> CSS </li>
-                <li> C </li>
-                <li> C++ </li>
-                <li> Python </li>
-                <li> Java </li>
-                <li> R </li>
-            </ul>
+            <button id="left-skills"> <p> Programming Languages </p>
+                <ul>
+                    <li> TypeScript </li>
+                    <li> JavaScript </li>
+                    <li> C </li>
+                    <li> C++ </li>
+                    <li> Python </li>
+                    <li> Java </li>
+                    <li> R </li>
+                </ul>
+            </button>
             
-            <p> Frameworks </p>
-            <ul>
-                <li> React.JS </li>
-                <li> Express.js </li>
-                <li> Django </li>
-            </ul>
+            <button id="center-skills"> <p> Frameworks </p>
+                <ul>
+                    <li> React.JS </li>
+                    <li> Express.js </li>
+                    <li> Django </li>
+                </ul>
+            </button>
 
-            <p> Programs </p>
-            <ul>
-                <li> MongoDB</li>
-                <li> DynamoDB</li>
-                <li> Davinci Resolve </li>
-                <li> Notion </li>
-                <li> Microsoft Suite </li>
-                <li> Linux </li>
-                <li> Windows </li>
-                <li> MacOS </li>
-            </ul>
+            <button id="right-skills"> <p> Programs </p>
+                <ul>
+                    <li> MongoDB</li>
+                    <li> DynamoDB</li>
+                    <li> Davinci Resolve </li>
+                    <li> Notion </li>
+                    <li> Microsoft Suite </li>
+                    <li> Linux </li>
+                    <li> Windows </li>
+                    <li> MacOS </li>
+                </ul>
+            </button>
     </div>
 
-    <div>
+    <div class="contact-info">
         <h2> Contact Me </h2>
         <p> Email: kjo220000@utdallas.edu </p>
         <p> Phone: (+1) 737-235-4380 </p> 
+    </div>
 
-        <p> Full Name: </p>
-        <p> Email: </p>
-        <p> Message: </p>
+    <div class="contact-form">
+        <input> Full Name: </input>
+        <input> Email: </input>
+        <input> Message: </input>
         <button> Send </button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-socials">
+            <button> 
+                <a href="https://www.linkedin.com/in/kamsiozorji/"> LinkedIn </a>
+            </button>
+            <button> 
+                <a href="https://github.com/anothergrind"> GitHub </a>  
+            </button>
+        </div>
+        <div class="footer-copyright">
+            <p> CopyRight ©  Kamsi Ozorji. All Rights Reserved. </p>
+        </div>
     </div>
 
 </body> 
