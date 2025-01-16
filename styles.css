@@ -1,6 +1,13 @@
-.first-section {
-    background-color: orange;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#intro {
+    text-align:  left;
+}
+
+#name{
+    text-align: center;
+}
+
+#title {
+    text-align: center;
 }
 
 .about-me {
@@ -9,19 +16,24 @@
 
 .connect {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .projects {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .experience {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
 }
 
 .skills {
-    background-color: orangered;
+    background-color: darkblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
 }
 
 #left-skills {
@@ -43,6 +55,7 @@
 .footer {
     background-color: grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .contact-info {
