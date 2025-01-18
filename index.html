@@ -3,71 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Kamsi's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title> Kamsi's Portfolio </title>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Kamsi</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    <div class="nav">
+        <a href="#about-me"> About Me </a>
+        <a href="#skills"> Skills </a>
+        <a href="#experience"> Experience </a>
+        <a href="#projects"> Projects </a>
+        <a href="#contact"> Contact </a>        
+    </div>
+    
+    <div>
+        <h4 id="intro"> Hey there! </h4>
+        <h1 id="name"> I'm Kamsi Ozorji </h1>
+        <h4 id="title"> Software Engineer </h4>
+    </div>
+
+    <div id="about-me" class="about-me">
+        <h2> About Me </h2>
+        <h5> Learn some more about me</h5>
+        <p> Hey there! I'm Kamsi Ozorji, a passionate CS Student at the University of Texas at Dallas, with a minor in Cognitive Science.
+            Although I'm still a sophomore, I have hands-on experience interning at Atlassian three times as well as Indeed once, and interned at UTD as a research inter for the NIB Lab.
+            In my freetime, I enjoy reading, eating, creating, and sleeping </p>
+    </div>
+
+    <div class="connect">
+        <button id="resume">
+            <a href="https://docs.google.com/document/d/1FSf6c_fSBfxqkh4go7vNqnoV6uf_MOkwBmnE7NQk5kY/edit?usp=sharing" style="text-decoration: none"> 
+                Resume 
+            </a> 
+        </button>
+        <button id="linkedin-btn"> 
+            <a href="https://www.linkedin.com/in/kamsiozorji/" style="text-decoration: none"> 
+                Connect with me 
+            </a>
+        </button>
+    </div>
+
+    <h2 id="projects"> Projects </h2>
+    <div class="projects">
+        <button id="aimd">
+            <h3> AIMD Neurodetect </h3>
+            <ul>
+                <li> Developed AI-powered solution to detect early signs of mental health conditions using NLP and speech analysis</li>
+                <li> Addressed ethical considerations regarding data privacy and consent in AI-driven mental health applications
+                <li> Technologies: Python, TypeScript, ReactJS, Next.JS </li>
+            </ul>
+        </button>
+
+        <button id="personal-website">
+            <h3> Personal Portfolio </h3>
+            <ul>
+                <li> Developed a personal portfolio website to showcase projects, experience, and skills. </li>
+                <li> Implemented responsive design techniques for mobile and desktop viewing. </li>
+                <li> Technologies: HTML, CSS </li>
+            </ul>
+        </button>
+    </div>
+
+    <div id="experience" class="experience">
+        <h2> Experience </h2>
+        <ul>
+            <li> Incoming SWE Intern @ Atlassian </li>
+            <li> Computational Research Assistant Intern @ UTD </li>
+            <li> SWE Intern @ Atlassian </li>
+            <li> SWE Intern @ Atlassian </li>
+            <li> SDE Intern @ Indeed </li>
+            <li> Student @ Code2College </li>
+        </ul>
+    </div>
+    <h2 id="skills"> Skills </h2>
+    <div class="skills">
+        <button id="left-skills">
+            <h3> Programming Languages </h3>
+            <ul class="frontend">
+                <li> TypeScript </li>
+                <li> JavaScript </li>
+                <li> Java </li>
+            </ul>
+            <ul class="backend">
+                <li> Python </li>
+                <li> C++ </li>
+                <li> R </li>
+            </ul>
+        </button>
+        
+        <button id="center-skills">
+            <h3> Frameworks </h3>
+            <ul>
+                <li> React.JS </li>
+                <li> Express.js </li>
+                <li> Django </li>
+            </ul>
+        </button>
+
+        <button id="right-skills">
+            <h3> Programs </h3>
+            <ul class="program">
+                <li> MongoDB</li>
+                <li> DynamoDB</li>
+                <li> Postman </li>
+            </ul>
+            <ul class="creative">
+                <li> Notion </li>
+                <li> Microsoft Suite </li>
+                <li> Davinci Resolve </li>
+            </ul>
+            <ul class="os">
+                <li> Windows </li>
+                <li> MacOS </li>
+                <li> Linux </li>
+            </ul>
+        </button>
+    </div>
+
+    <div id="contact" class="contact-info">
+        <h2> Contact Me </h2>
+        <p> Email: kjo220000@utdallas.edu </p>
+        <p> Phone: (+1) 737-235-4380 </p> 
+    </div>
+
+    <div class="contact-form">
+        <input placeholder="Your Full Name: "> </input>
+        <input placeholder="Email: "> </input>
+        <input placeholder="Message: ">  </input>
+        <button> Send </button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-socials">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Blogs</a>
-                <a href="">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
+        
+        <div class="footer-nav">
+            <a href="#"> About Me </a>
+            <a href="#"> Skills </a>
+            <a href="#"> Experience </a>
+            <a href="#"> Projects </a>
+            <a href="#"> Contact </a>        
         </div>
-    </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="main.png" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey y'all, it's <span>Kamsi</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I'm Kamsi Ozorji, a passionate CS Student at the University of Texas at Dallas, with a minor in Cognitive Science.
-                        Although I'm still a sophomore, I have hands-on experience interning as an SWE @ Atlassian three times and as a SDE @ Indeed once, and was a research intern at UTD for the NIB Lab
-                        <a href="https://github.com/anothergrind" ><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kamsiozorji/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button>
-                            <a href="https://docs.google.com/document/d/1FSf6c_fSBfxqkh4go7vNqnoV6uf_MOkwBmnE7NQk5kY/edit?usp=sharing"> Resume </a> 
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
-</body>
+
+        <div class="footer-copyright">
+            <p> CopyRight ©  Kamsi Ozorji. All Rights Reserved. </p>
+        </div>
+    </div>
+
+</body> 
 </html>
